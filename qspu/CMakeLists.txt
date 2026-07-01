@@ -1,0 +1,31 @@
+build_lib(
+  LIBNAME qspu
+  SOURCE_FILES
+    helper/qspu-helper.cc
+    model/qspu-dpd.cc
+    model/qspu-id-cache.cc
+    model/qspu-neighbor.cc
+    model/qspu-packet.cc
+    model/qspu-routing-protocol.cc
+    model/qspu-rqueue.cc
+    model/qspu-rtable.cc
+  HEADER_FILES
+    helper/qspu-helper.h
+    model/qspu-dpd.h
+    model/qspu-id-cache.h
+    model/qspu-neighbor.h
+    model/qspu-packet.h
+    model/qspu-routing-protocol.h
+    model/qspu-rqueue.h
+    model/qspu-rtable.h
+  LIBRARIES_TO_LINK
+    ${libapplications}
+    ${libinternet-apps}
+    ${libwifi}
+  #TEST_SOURCES
+   # test/qspu-id-cache-test-suite.cc
+    #test/qspu-regression.cc
+    #test/qspu-test-suite.cc
+    #test/loopback.cc
+    #test/bug-772.cc
+)
