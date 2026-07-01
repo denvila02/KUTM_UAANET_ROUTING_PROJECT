@@ -1,0 +1,33 @@
+build_lib(
+  LIBNAME aodvetx
+  SOURCE_FILES
+    helper/aodvetx-helper.cc
+    model/aodvetx-dpd.cc
+    model/aodvetx-id-cache.cc
+    model/aodvetx-neighbor.cc
+    model/aodvetx-packet.cc
+    model/aodvetx-routing-protocol.cc
+    model/aodvetx-rqueue.cc
+    model/aodvetx-rtable.cc
+    model/aodvetx-neighbor-etx.cc
+  HEADER_FILES
+    helper/aodvetx-helper.h
+    model/aodvetx-dpd.h
+    model/aodvetx-id-cache.h
+    model/aodvetx-neighbor.h
+    model/aodvetx-packet.h
+    model/aodvetx-routing-protocol.h
+    model/aodvetx-rqueue.h
+    model/aodvetx-rtable.h
+    model/aodvetx-neighbor-etx.h
+  LIBRARIES_TO_LINK
+    ${libapplications}
+    ${libinternet-apps}
+    ${libwifi}
+  #TEST_SOURCES
+   # test/aodvetx-id-cache-test-suite.cc
+    #test/aodvetx-regression.cc
+    #test/aodvetx-test-suite.cc
+    #test/loopback.cc
+    #test/bug-772.cc
+)
