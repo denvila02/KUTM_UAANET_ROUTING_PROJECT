@@ -24,6 +24,15 @@ U simulacijama su poređeni sljedeći rutirajući protokoli:
 - **AODV_ETX** – modificirana verzija AODV protokola sa ETX metrikom
 - **QSPU** – QoS-svjestan routing pristup zasnovan na dodatnim parametrima kvaliteta rute
 
+### Kratak opis modificiranih protokola
+
+- **AODV_ETX** dodaje LPP (Link Probe Packet) poruke za procjenu kvaliteta
+  linka i bira rutu prema ukupnoj ETX vrijednosti umjesto broja hopova.
+- **QSPU** koristi periodične IGAD/UAVAD advertisement poruke kojima GCS
+  čvor oglašava dostupnost, a UAV čvorovi biraju rutu prema kombinovanoj
+  cijeni (povezanost, životni vijek rute, kašnjenje).
+
+
 ## Struktura repozitorija
 
 ```text
@@ -146,6 +155,30 @@ Rezultati se nalaze u folderu:
 ```text
 results/
 ```
+
+## Video analiza saobraćaja
+
+Video snimak sa Wireshark analizom komunikacije nalazi se u:
+
+```text
+report/video/
+```
+
+Pcap tragovi korišteni za analizu generisani su tokom simulacije pomoću
+`EnablePcapAll()` u odgovarajućoj `.cc` skripti.
+
+## Preduslovi
+
+- ns-3.42 (build alati: cmake, ninja/make, g++)
+- Python 3.10+ sa paketima: `pandas`, `matplotlib`, `numpy`
+  (`pip install -r scripts/requirements.txt` ako postoji)
+
+## Licenca
+
+Modul `src/aodv/` bazira se na ns-3 core implementaciji (IITP RAS, 2009,
+GPLv2), koja je izvedena iz ns-2 AODV modela (CMU/MONARCH) i AODV-UU
+implementacije (Uppsala University). Moduli `src/aodvetx/` i `src/qspu/`
+prošireni su/razvijeni za potrebe ovog projekta na istoj osnovi.
 
 ## Napomena o izmjenama u ns-3
 
