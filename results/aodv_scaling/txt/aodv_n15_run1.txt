@@ -1,0 +1,106 @@
+========================================
+UAANET AODV rezultati
+========================================
+Protocol: AODV
+RNG run: 1
+Broj GCS cvorova: 1
+Broj UAV cvorova: 15
+Ukupno cvorova: 16
+Sim time: 100 s
+App start: 20 s
+App stop: 90 s
+Active time: 70 s
+Area size: 1000 x 1000 m
+Node speed: 20 m/s
+Node pause: 2 s
+Tx range: 300 m
+Tx power: 20 dBm
+Rx sensitivity: -85 dBm
+UAV altitude range: 20 - 120 m
+Remote-ID enabled: false
+
+--- Telemetry UAV -> GCS ---
+Flowovi ukupno: 15
+Uspjesni flowovi: 15
+Tx paketi: 5214
+Rx paketi: 3713
+Tx bytes: 813384
+Rx bytes: 579228
+PDR (%): 71.2121
+Packet loss (%): 28.7879
+Avg delay (ms): 172.661
+Throughput (kbps): 66.1975
+Offered load (kbps): 92.9582
+
+--- C2 Control GCS -> UAV ---
+Flowovi ukupno: 15
+Uspjesni flowovi: 15
+Tx paketi: 20580
+Rx paketi: 11159
+Tx bytes: 1893360
+Rx bytes: 1026628
+PDR (%): 54.2225
+Packet loss (%): 45.7775
+Avg delay (ms): 68.723
+Throughput (kbps): 117.329
+Offered load (kbps): 216.384
+
+--- C2 Command GCS -> UAV ---
+Flowovi ukupno: 15
+Uspjesni flowovi: 14
+Tx paketi: 723
+Rx paketi: 380
+Tx bytes: 112788
+Rx bytes: 59280
+PDR (%): 52.5588
+Packet loss (%): 47.4412
+Avg delay (ms): 63.9929
+Throughput (kbps): 6.77486
+Offered load (kbps): 12.8901
+
+--- Ukupni C2 saobracaj ---
+Flowovi ukupno: 30
+Uspjesni flowovi: 29
+Tx paketi: 21303
+Rx paketi: 11539
+Tx bytes: 2006148
+Rx bytes: 1085908
+PDR (%): 54.1661
+Packet loss (%): 45.8339
+Avg delay (ms): 68.5673
+Throughput (kbps): 124.104
+Offered load (kbps): 229.274
+
+--- Video/Image UAV -> GCS ---
+Flowovi ukupno: 15
+Uspjesni flowovi: 15
+Tx paketi: 5675
+Rx paketi: 3504
+Tx bytes: 5970100
+Rx bytes: 3686208
+PDR (%): 61.7445
+Packet loss (%): 38.2555
+Avg delay (ms): 163.833
+Throughput (kbps): 421.281
+Offered load (kbps): 682.297
+
+--- AODV routing overhead, port 654 ---
+Flowovi ukupno: 192
+Uspjesni flowovi: 189
+Tx paketi: 14258
+Rx paketi: 13564
+Tx bytes: 658068
+Rx bytes: 626488
+PDR (%): N/A za routing overhead
+Packet loss (%): N/A za routing overhead
+Avg delay (ms): N/A za routing overhead
+Throughput (kbps): N/A za routing overhead
+Offered load (kbps): 75.2078
+
+--- Normalizovani routing overhead ---
+Aplikacijski Tx bytes: 8789632
+Aplikacijski Rx bytes: 5351344
+Aplikacijski Tx paketi: 32192
+Aplikacijski Rx paketi: 18756
+Routing Tx bytes / delivered app byte: 0.122972
+Routing Tx packets / delivered app packet: 0.760183

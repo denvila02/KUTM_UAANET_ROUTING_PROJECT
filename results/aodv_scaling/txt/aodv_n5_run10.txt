@@ -1,0 +1,106 @@
+========================================
+UAANET AODV rezultati
+========================================
+Protocol: AODV
+RNG run: 10
+Broj GCS cvorova: 1
+Broj UAV cvorova: 5
+Ukupno cvorova: 6
+Sim time: 100 s
+App start: 20 s
+App stop: 90 s
+Active time: 70 s
+Area size: 1000 x 1000 m
+Node speed: 20 m/s
+Node pause: 2 s
+Tx range: 300 m
+Tx power: 20 dBm
+Rx sensitivity: -85 dBm
+UAV altitude range: 20 - 120 m
+Remote-ID enabled: false
+
+--- Telemetry UAV -> GCS ---
+Flowovi ukupno: 5
+Uspjesni flowovi: 0
+Tx paketi: 1744
+Rx paketi: 0
+Tx bytes: 272064
+Rx bytes: 0
+PDR (%): 0
+Packet loss (%): 100
+Avg delay (ms): 0
+Throughput (kbps): 0
+Offered load (kbps): 31.093
+
+--- C2 Control GCS -> UAV ---
+Flowovi ukupno: 5
+Uspjesni flowovi: 0
+Tx paketi: 6885
+Rx paketi: 0
+Tx bytes: 633420
+Rx bytes: 0
+PDR (%): 0
+Packet loss (%): 100
+Avg delay (ms): 0
+Throughput (kbps): 0
+Offered load (kbps): 72.3909
+
+--- C2 Command GCS -> UAV ---
+Flowovi ukupno: 5
+Uspjesni flowovi: 0
+Tx paketi: 277
+Rx paketi: 0
+Tx bytes: 43212
+Rx bytes: 0
+PDR (%): 0
+Packet loss (%): 100
+Avg delay (ms): 0
+Throughput (kbps): 0
+Offered load (kbps): 4.93851
+
+--- Ukupni C2 saobracaj ---
+Flowovi ukupno: 10
+Uspjesni flowovi: 0
+Tx paketi: 7162
+Rx paketi: 0
+Tx bytes: 676632
+Rx bytes: 0
+PDR (%): 0
+Packet loss (%): 100
+Avg delay (ms): 0
+Throughput (kbps): 0
+Offered load (kbps): 77.3294
+
+--- Video/Image UAV -> GCS ---
+Flowovi ukupno: 5
+Uspjesni flowovi: 0
+Tx paketi: 2100
+Rx paketi: 0
+Tx bytes: 2209200
+Rx bytes: 0
+PDR (%): 0
+Packet loss (%): 100
+Avg delay (ms): 0
+Throughput (kbps): 0
+Offered load (kbps): 252.48
+
+--- AODV routing overhead, port 654 ---
+Flowovi ukupno: 0
+Uspjesni flowovi: 0
+Tx paketi: 0
+Rx paketi: 0
+Tx bytes: 0
+Rx bytes: 0
+PDR (%): N/A za routing overhead
+Packet loss (%): N/A za routing overhead
+Avg delay (ms): N/A za routing overhead
+Throughput (kbps): N/A za routing overhead
+Offered load (kbps): 0
+
+--- Normalizovani routing overhead ---
+Aplikacijski Tx bytes: 3157896
+Aplikacijski Rx bytes: 0
+Aplikacijski Tx paketi: 11006
+Aplikacijski Rx paketi: 0
+Routing Tx bytes / delivered app byte: 0
+Routing Tx packets / delivered app packet: 0
